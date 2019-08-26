@@ -1,0 +1,15 @@
+server:
+  port: 80 # 端口 直接访问127.0.0.1/email/XXX
+
+spring:
+  mail:
+    host: smtp.qq.com
+    username: aaa@qq.com
+    password: vdudfkmxxxxxxx #这里用的事qq的授权码 ，不是qq邮箱的密码
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
