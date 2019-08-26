@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/springbootAll.iml" filepath="$PROJECT_DIR$/.idea/springbootAll.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_mybatis_pagehelper/springboot_mybatis_pagehelper.iml" filepath="$PROJECT_DIR$/springboot_mybatis_pagehelper/springboot_mybatis_pagehelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springbootmail/springbootmail.iml" filepath="$PROJECT_DIR$/springbootmail/springbootmail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springbootmybatis/springbootmybatis.iml" filepath="$PROJECT_DIR$/springbootmybatis/springbootmybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springbootrestful/springbootrestful.iml" filepath="$PROJECT_DIR$/springbootrestful/springbootrestful.iml" />
+    </modules>
+  </component>
+</project>
