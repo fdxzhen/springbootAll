@@ -5,10 +5,12 @@ import com.github.pagehelper.PageHelper;
 import com.zhenhao.bean.User;
 import com.zhenhao.dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class UserController {
 
     @Autowired
@@ -21,4 +23,8 @@ public class UserController {
         return userList;
     }
 
+    @RequestMapping("/index")
+    public String index(){
+        return "index";
+    }
 }
