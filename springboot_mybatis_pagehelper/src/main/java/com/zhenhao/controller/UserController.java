@@ -6,9 +6,8 @@ import com.zhenhao.bean.User;
 import com.zhenhao.dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 @Controller
 public class UserController {
@@ -23,8 +22,16 @@ public class UserController {
         return userList;
     }
 
-    @RequestMapping("/index")
-    public String index(){
+    @RequestMapping("/page")
+    public String index(Model model,int pageNum,int pageSize){
+        PageHelper.startPage(pageNum,pageSize);
+        Page<User> userList = userDao.getUserList();
+        model.addAttribute("userlist",userList);
+        return "index";
+    }
+
+    @RequestMapping("index")
+    public String index1(){
         return "index";
     }
 }
